@@ -55,11 +55,6 @@ acrylic sheet at 24 degrees below it reflects the picture towards the crowd. Bec
 cube, they only ever see the reflection: the dancer floating in a black void. The geometry was chosen with ray-traced
 viewer simulations, comparing it with a Pepper's cone. ([optics/](optics), [docs/hardware.md](docs/hardware.md))
 
-<p align="center">
-  <img src="optics/diagrams/8-ghost-side.png" width="48%" alt="Side view of the Pepper's ghost in the shelf cube">
-  <img src="optics/diagrams/9-ghost-sim.png" width="48%" alt="Simulated views of the hologram from several viewer positions">
-</p>
-
 ## Tech
 
 JavaScript (ES modules), three.js / WebGL2 with custom GLSL shaders, Web Audio API, BroadcastChannel; Python for the
