@@ -1,0 +1,93 @@
+{
+  "_help": "Which moves the dancer picks for each moment. Names = file names in moves/ without .fbx. A move can be in several pools. Moves not listed anywhere are sorted in automatically by how energetic they are.",
+  "breakdown": [
+    "Belly Dance",
+    "Bellydancing",
+    "Rumba Dancing",
+    "Wave Hip Hop Dance"
+  ],
+  "build": [
+    "Twist Dance",
+    "Salsa Dancing",
+    "Hip Hop Dancing(1)"
+  ],
+  "drop": [
+    "Dancing Twerk",
+    "House Dancing",
+    "Northern Soul Spin",
+    "Samba Dancing",
+    "Breakdance Ready",
+    "Booty Hip Hop Dance"
+  ],
+  "peak": [
+    "Hip Hop Dancing",
+    "House Dancing",
+    "Dancing Twerk",
+    "Breakdance Ready",
+    "Can Can"
+  ],
+  "normal": [
+    "Salsa Dancing",
+    "Swing Dancing",
+    "Dancing",
+    "Rumba Dancing",
+    "Wave Hip Hop Dance",
+    "Samba Dancing(1)",
+    "Booty Hip Hop Dance"
+  ],
+  "skip": [],
+  "_combos": "Body-split mixing: legs/hips from one move + torso/arms/head from another. comboChance = how often (0 = never, 1 = always). badCombos = pairs that look wrong, written as \"legs move + arms move\".",
+  "comboChance": 0.4,
+  "badCombos": [],
+  "_segments": "Highlights cut out of a move, usable as moves of their own (also in the pools above). Find the times with G in the hologram page.",
+  "segments": {},
+  "_noUpper": "Moves whose arms/upper body are never used in a combination (they can still play as a whole-body move).",
+  "noUpper": [
+    "Can Can"
+  ],
+  "_families": "Body-split rules: moves are only mixed within a family or with a compatible family; wholeOnly moves are never split; both halves also need a similar step tempo and energy (checked from the motion).",
+  "families": {
+    "latin": [
+      "Rumba Dancing",
+      "Salsa Dancing",
+      "Samba Dancing",
+      "Samba Dancing(1)",
+      "Swing Dancing"
+    ],
+    "belly": [
+      "Belly Dance",
+      "Bellydancing"
+    ],
+    "street": [
+      "Hip Hop Dancing",
+      "Hip Hop Dancing(1)",
+      "Wave Hip Hop Dance",
+      "House Dancing",
+      "Dancing"
+    ],
+    "retro": [
+      "Twist Dance"
+    ]
+  },
+  "compatible": [
+    [
+      "latin",
+      "belly"
+    ],
+    [
+      "latin",
+      "retro"
+    ],
+    [
+      "street",
+      "retro"
+    ]
+  ],
+  "wholeOnly": [
+    "Dancing Twerk",
+    "Booty Hip Hop Dance",
+    "Northern Soul Spin",
+    "Breakdance Ready",
+    "Can Can"
+  ]
+}

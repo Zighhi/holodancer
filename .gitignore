@@ -1,0 +1,18 @@
+# Your own files: never in the repo
+# - the dancer: Mixamo characters / animations may not be redistributed (download your own, see app/assets/README.md)
+app/assets/dancers/*
+!app/assets/dancers/moves.json
+# - medical volumes and everything made from them (tools/volume)
+app/assets/brain/
+app/assets/spine/
+tools/volume/work/
+*.dcm
+*.nii
+*.nii.gz
+# - what the show learns and the venue calibration (created by the server at runtime)
+app/memory/
+
+# Python
+__pycache__/
+.venv/
+*.pyc

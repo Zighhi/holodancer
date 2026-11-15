@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Brain viewer</title>
+  <style>
+    html, body { margin: 0; height: 100%; background: #000; color: #aaa; overflow: hidden; }
+    #info { position: fixed; bottom: 8px; left: 12px; font: 12px ui-monospace, monospace; white-space: pre; }
+    canvas { display: block; cursor: grab; }
+  </style>
+  <script type="importmap">
+    { "imports": { "three": "./vendor/three/three.module.js", "three/addons/": "./vendor/three/addons/" } }
+  </script>
+</head>
+<body>
+  <div id="info"></div>
+  <script type="module" src="js/brain-viewer.js"></script>
+</body>
+</html>

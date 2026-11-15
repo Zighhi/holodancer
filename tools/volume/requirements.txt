@@ -1,0 +1,10 @@
+numpy>=2.0
+scipy>=1.13
+scikit-image>=0.24
+pydicom>=3.0
+nibabel>=5.2
+brainextractor>=0.3
+trimesh>=4.0
+fast-simplification>=0.1
+matplotlib>=3.8
+pillow>=10.0

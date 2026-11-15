@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Hologram</title>
+  <style>
+    html, body { margin: 0; height: 100%; background: #000; color: #ddd; font: 14px system-ui, sans-serif; overflow: hidden; }
+    #ui { position: fixed; top: 0; left: 0; right: 0; display: flex; gap: 10px; align-items: center; padding: 8px 12px;
+      background: rgba(18, 16, 25, 0.85); flex-wrap: wrap; z-index: 2; }
+    #ui select, #ui button, #ui label { background: #1d1a28; color: #ddd; border: 1px solid #333; padding: 5px 9px;
+      border-radius: 6px; font: inherit; cursor: pointer; }
+    #ui input[type=file] { display: none; }
+    #info { position: fixed; bottom: 8px; left: 12px; color: #aaa; font: 12px ui-monospace, monospace; z-index: 2;
+      white-space: pre; text-shadow: 0 0 4px #000; }
+    #vignette { position: fixed; inset: 0; pointer-events: none; z-index: 1;
+      background: radial-gradient(ellipse at center, rgba(0,0,0,0) 45%, rgba(20,10,40,0.55) 100%); }
+    canvas { display: block; }
+    .hidden { display: none !important; }
+  </style>
+  <script type="importmap">
+    { "imports": { "three": "./vendor/three/three.module.js", "three/addons/": "./vendor/three/addons/" } }
+  </script>
+</head>
+<body>
+  <div id="ui">
+    <select id="device"><option value="">default input</option></select>
+    <button id="start">Start input</button>
+    <label>Audio file<input id="file" type="file" accept="audio/*"></label>
+    <audio id="player" controls loop style="height: 30px; flex: 1; min-width: 260px; display: none"></audio>
+    <span>keys: R calibration &nbsp; V send her up/down &nbsp; Q unison &nbsp; Z journey snippet &nbsp; J head journey &nbsp; Y scanner &nbsp; E echo slices &nbsp; B brain &nbsp; A accents &nbsp; O night phase &nbsp; G grab time &nbsp; L hair &nbsp; [ ] hair brightness &nbsp; 1-5 move pools &nbsp; X scene &nbsp; D fake drop &nbsp; S stutter &nbsp; P trip level &nbsp; K kaleidoscope &nbsp; C colours &nbsp; N next move &nbsp; H look &nbsp; T half-time &nbsp; W whip &nbsp; M mirror &nbsp; F fullscreen &nbsp; U hide UI</span>
+  </div>
+  <div id="vignette"></div>
+  <div id="info"></div>
+  <script type="module" src="js/hologram.js"></script>
+</body>
+</html>

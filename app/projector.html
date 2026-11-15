@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Projector</title>
+  <style>
+    html, body { margin: 0; height: 100%; background: #000; color: #aaa; overflow: hidden; }
+    #info { position: fixed; bottom: 8px; left: 12px; font: 12px ui-monospace, monospace; white-space: pre; z-index: 2;
+      text-shadow: 0 0 4px #000; }
+    #wait { position: fixed; inset: 0; display: flex; align-items: center; justify-content: center; pointer-events: none;
+      font: 15px system-ui, sans-serif; color: #c9b8ff; text-shadow: 0 0 8px #000; z-index: 2; }
+    canvas { display: block; }
+    .hidden { display: none !important; }
+  </style>
+  <script type="importmap">
+    { "imports": { "three": "./vendor/three/three.module.js", "three/addons/": "./vendor/three/addons/" } }
+  </script>
+</head>
+<body>
+  <div id="wait">waiting for the hologram window (hologram.html) - running on its own meanwhile</div>
+  <div id="info"></div>
+  <script type="module" src="js/projector.js"></script>
+</body>
+</html>
